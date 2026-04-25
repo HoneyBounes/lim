@@ -17,7 +17,7 @@ function updateTimer() {
         const minutes = Math.floor((seconds % (60 * 60)) / 60);
         const secs = seconds % 60;
 
-        timer = `...и то ${days} дана ${hours} сати ${minutes} минута ${secs} секунди! <3`;
+        timer = `...и то већ ${days} дана ${hours} сати ${minutes} минута ${secs} секунди!`;
     }
 
     document.getElementById("timer").textContent = timer;
