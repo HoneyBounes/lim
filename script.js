@@ -1,7 +1,5 @@
-// Target date (27 June 2025)
 const startDate = new Date("2025-06-27T00:00:00");
 
-// This is the variable you wanted
 let timer = "";
 
 function updateTimer() {
@@ -18,13 +16,11 @@ function updateTimer() {
         const minutes = Math.floor((seconds % (60 * 60)) / 60);
         const secs = seconds % 60;
 
-        timer = `I love you for ${days} days ${hours} hours ${minutes} minutes ${secs} seconds`;
+        timer = `..и то ${days} дана ${hours} сати ${minutes} минута ${secs} секунди <3`;
     }
 
-    // Update HTML
     document.getElementById("timer").textContent = timer;
 }
 
-// Run immediately and then every second
 updateTimer();
 setInterval(updateTimer, 1000);
